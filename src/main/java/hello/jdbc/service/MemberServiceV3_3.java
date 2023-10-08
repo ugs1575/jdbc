@@ -2,9 +2,7 @@ package hello.jdbc.service;
 
 import java.sql.SQLException;
 
-import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.Transactional;
-import org.springframework.transaction.support.TransactionTemplate;
 
 import hello.jdbc.domain.Member;
 import hello.jdbc.repository.MemberRepositoryV3;
