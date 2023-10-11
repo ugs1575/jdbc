@@ -11,10 +11,11 @@ import org.junit.jupiter.api.Test;
 public class CheckedAppTest {
 
 	@Test
-	void checked() {
+	void checked() throws SQLException, ConnectException {
 		Controller controller = new Controller();
-		assertThatThrownBy(() -> controller.request())
-			.isInstanceOf(Exception.class);
+		controller.request();
+		// assertThatThrownBy(() -> controller.request())
+		// 	.isInstanceOf(Exception.class);
 	}
 
 	static class Controller {
